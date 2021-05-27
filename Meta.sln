@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleIfElseSwitchCase", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCycle", "SimpleCycle\SimpleCycle.csproj", "{3C80848A-3F5E-4F52-80DF-F8A1E05FF91C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMassiv", "SimpleMassiv\SimpleMassiv.csproj", "{EBC47A6A-6E3D-48D3-ACFA-38E901A6BB8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleMassiv", "SimpleMassiv\SimpleMassiv.csproj", "{EBC47A6A-6E3D-48D3-ACFA-38E901A6BB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMethods", "SimpleMethods\SimpleMethods.csproj", "{B71318CB-2BD7-4851-A28D-23C0F80D8CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleParams", "SimpleParams\SimpleParams.csproj", "{5E73974D-360D-4B2F-8112-0147100C905A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{EBC47A6A-6E3D-48D3-ACFA-38E901A6BB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC47A6A-6E3D-48D3-ACFA-38E901A6BB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC47A6A-6E3D-48D3-ACFA-38E901A6BB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71318CB-2BD7-4851-A28D-23C0F80D8CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71318CB-2BD7-4851-A28D-23C0F80D8CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71318CB-2BD7-4851-A28D-23C0F80D8CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71318CB-2BD7-4851-A28D-23C0F80D8CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E73974D-360D-4B2F-8112-0147100C905A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E73974D-360D-4B2F-8112-0147100C905A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E73974D-360D-4B2F-8112-0147100C905A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E73974D-360D-4B2F-8112-0147100C905A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

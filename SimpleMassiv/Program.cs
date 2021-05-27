@@ -13,7 +13,8 @@ namespace SimpleMassiv
             //Basic.ZubMassive();
             //Basic.PositiveNumbers();
             //Basic.MassInverse();
-            Extra.OutputMass();
+            //Extra.OutputMass();
+            Extra.MassSort();
         }
     }
     class Basic
@@ -160,6 +161,39 @@ namespace SimpleMassiv
                 Console.Write("\b},");
             }
             Console.Write("\b}");
+            Console.ReadKey();
+        }
+        public static void MassSort()
+        {
+            int[] nums = new int[7];
+            Console.WriteLine("Введите 7 чисел");
+                for (int i = 0; i < nums.Length; i++)
+                {
+                    Console.Write($"{i + 1} число: ");
+                    while (!int.TryParse(Console.ReadLine(),out nums[i]))
+                        {
+                        Console.WriteLine("Ошибка ввода, введите целое число");
+                        }
+                }
+            int temp;
+            Console.WriteLine("Начата сортировка массива");
+            for (int i = 0; i<nums.Length-1;i++)
+            {
+                for (int j = i+1; j<nums.Length;j++)
+                {
+                    if (nums[i]>nums[j])
+                    {
+                        temp = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("Вывод отсортированнго массива");
+            for(int i=0; i<nums.Length;i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
             Console.ReadKey();
         }
     }
