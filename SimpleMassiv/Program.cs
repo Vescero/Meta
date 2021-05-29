@@ -14,7 +14,11 @@ namespace SimpleMassiv
             //Basic.PositiveNumbers();
             //Basic.MassInverse();
             //Extra.OutputMass();
-            Extra.MassSort();
+            //Extra.MassSort();
+            Extra.DropChanceXTimeInRow(3,0.2,out double result);
+            Console.WriteLine(result);
+            Extra.DropChancePerMobs(333, 0.01, out double result2);
+            Console.WriteLine(result2);
         }
     }
     class Basic
@@ -195,6 +199,16 @@ namespace SimpleMassiv
                 Console.WriteLine(nums[i]);
             }
             Console.ReadKey();
+        }
+        public static void DropChanceXTimeInRow(int monstersInRow, double dropchance, out double result)
+        {
+            result = Math.Pow(dropchance, monstersInRow);
+        }
+        public static void DropChancePerMobs(int monterSInRow,double dropchance, out double result)
+        {
+            double failChance = 1 - dropchance;
+            Console.WriteLine(failChance);
+            result = ((1 - Math.Pow(failChance, monterSInRow)) * 100);
         }
     }
 }
